@@ -25,6 +25,7 @@ setup(
     description='Marshmallow and Python 3 annotations',
     license='MIT',
     url='https://github.com/cbourget/annotype',
+    download_url='https://github.com/cbourget/annotype/archive/0.1.tar.gz',
     keywords = [
         'annotation',
         'marshmallow',
