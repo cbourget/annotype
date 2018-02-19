@@ -23,10 +23,14 @@ setup(
     author='Charles-Éric Bourget',
     author_email='charlesericbourget@gmail.com',
     description='Marshmallow and Python 3 annotations',
-    license='TBD',
-    classifiers=[
-        'Private :: Do Not Upload to pypi server'
+    license='MIT',
+    url='https://github.com/cbourget/annotype',
+    keywords = [
+        'annotation',
+        'marshmallow',
+        'type'
     ],
+    classifiers=[],
     install_requires=install_requires,
     extras_require=extras_require
 )
