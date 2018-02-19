@@ -29,7 +29,7 @@ setup(
     long_description=open('README.rst').read(),
     license='MIT',
     url='https://github.com/cbourget/annotype',
-    download_url='https://github.com/cbourget/annotype/archive/0.1.tar.gz',
+    download_url='https://github.com/cbourget/annotype/archive/0.1.1.tar.gz',
     keywords = 'annotation marshmallow type',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     classifiers=[
