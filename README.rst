@@ -18,7 +18,7 @@ validation of function arguments.
         lastname = fields.Str(required=True)
 
     @annotyped()
-    def salute(person: SampleSchema):
+    def salute(person: PersonSchema):
         print 'Hello {} {}'.format(person['firstname'], person['lastnamename'])
 
     person = dict(firstname='John')
