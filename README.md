@@ -1,15 +1,16 @@
-Annotype: Python 3 annotations and marshmallow combined
-=======================================================
+Annotype: Python 3 annotations and marshmallow
+==============================================
 
 **Annotype** combines Python 3 annotations and Marshmallow for powerful
 validation of function arguments.
 
-``` {.sourceCode .python}
+```python
 from annotype import annotyped
 from marshmallow import (
     Schema,
     fields
 )
+
 
 class PersonSchema(Schema):
     firstname = fields.Str(required=True)
@@ -17,18 +18,18 @@ class PersonSchema(Schema):
 
 @annotyped()
 def salute(person: SampleSchema):
-    print 'Hello {} {}'.format(person['firstname'], person['firstname'])
+    print 'Hello {} {}'.format(person['firstname'], person['lastnamename'])
 
 person = dict(firstname='John')
 
-# This will raise an error because lastname is not defined
+# This will raise a ValidationError because lastname is not defined
 salute(person)
 
 @annotyped()
 def welcome(firstname: fields.Str(), lastname: fields.Str()):
     print 'Welcome {} {}'.format(firstname, lastname)
 
-# This will also raise an error because lastname is not a string
+# This will also raise a ValidationError because lastname is not a string
 welcome('Jane', 1)
 ```
 
