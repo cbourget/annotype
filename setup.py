@@ -5,6 +5,8 @@ from setuptools import (
 
 
 package_name = 'annotype'
+version = '0.1.1'
+url = 'https://github.com/cbourget/annotype'
 
 install_requires = [
     'marshmallow>=3.0.0b7'
@@ -22,14 +24,14 @@ extras_require={
 
 setup(
     name=package_name,
-    version='0.1.0',
+    version=version,
     author='Charles-Eric Bourget',
     author_email='charlesericbourget@gmail.com',
     description='Marshmallow and Python 3 annotations',
     long_description=open('README.rst').read(),
     license='MIT',
-    url='https://github.com/cbourget/annotype',
-    download_url='https://github.com/cbourget/annotype/archive/0.1.1.tar.gz',
+    url=url,
+    download_url='{}/archive/{}.tar.gz'.format(url, version),
     keywords = 'annotation marshmallow type',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     classifiers=[
