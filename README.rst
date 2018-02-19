@@ -19,7 +19,7 @@ validation of function arguments.
 
     @annotyped()
     def salute(person: PersonSchema):
-        print 'Hello {} {}'.format(person['firstname'], person['lastnamename'])
+        print 'Hello {} {}'.format(person['firstname'], person['lastname'])
 
     person = dict(firstname='John')
 
