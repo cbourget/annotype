@@ -5,7 +5,7 @@ from setuptools import (
 
 
 package_name = 'annotype'
-version = '0.1.1'
+version = '0.1.2'
 url = 'https://github.com/cbourget/annotype'
 
 install_requires = [
