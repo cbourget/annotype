@@ -9,7 +9,7 @@ version = '0.1.1'
 url = 'https://github.com/cbourget/annotype'
 
 install_requires = [
-    'marshmallow>=3.0.0b7'
+    'marshmallow>=3.0.0b8'
 ]
 
 extras_require={
